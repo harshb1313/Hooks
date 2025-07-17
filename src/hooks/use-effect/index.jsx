@@ -5,7 +5,7 @@ export const EffectExample = () => {
     let [fetchval, setFetchval] = useState([]);
     let [toggle, setToggle] = useState(false);
     useEffect(()=>{
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("https://api.github.com/users")
          .then((Response)=> Response.json())
          .then((json)=> setFetchval(json));
     })
